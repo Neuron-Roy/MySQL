@@ -7,9 +7,20 @@ this is a guide to create users with password on mysql database in linux ubuntu 
 # Step - 1
 **Basic Login??**
 
-Open up your linux terminal using root or whatever usernames you have i should look like this:
+if you are in Windows 10 or 11 look up for `command prompt` in the start menu and open it
 
-![image](https://cdn.discordapp.com/attachments/982008692746616832/982735804256374814/unknown.png)
+![Search](https://cdn.discordapp.com/attachments/982008692746616832/982748148982251570/unknown.png)
+
+if you are on WIndows 11 you might this kind of interface
+
+![image](https://cdn.discordapp.com/attachments/982008692746616832/982748865398714398/unknown.png)
+
+type the command in the command prompt
+```
+ssh root@123.123.123.123
+```
+Replace `123.123.123.123` with your server ip
+and now you are in your linux server *thank me join my discord lol*
 
 # Step - 2
 **Change the IP Bindings so that you can connect to the Database using the Server ip**
@@ -57,9 +68,14 @@ Replace `123.123.123.123` with your Server ip
 
 ```SQL
 CREATE USER 'qbc'@'localhost' IDENTIFIED BY 'RandomPass8980!';
+
 CREATE USER 'qbc'@'%' IDENTIFIED BY 'RandomPass8980!';
+
 CREATE USER 'qbc'@'123.123.123.123' IDENTIFIED BY 'RandomPass8980!';
+
 GRANT ALL PRIVILEGES ON *.* TO 'qbc'@'localhost' WITH GRANT OPTION;
+
 GRANT ALL PRIVILEGES ON *.* TO 'qbc'@'%' WITH GRANT OPTION;
+
 GRANT ALL PRIVILEGES ON *.* TO 'qbc'@'123.123.123.123' WITH GRANT OPTION;
 ```
