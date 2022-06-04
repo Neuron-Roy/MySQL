@@ -3,6 +3,15 @@
 
 # MySQL
 this is a guide to create users with password on mysql database in linux ubuntu 20.04 LTS Server
+# Jump to Steps
+
+[Step - 1](https://github.com/Neuron-Roy/MySQL#step---1) Log in to the Server terminal
+
+[Step - 2](https://github.com/Neuron-Roy/MySQL#step---2) Change the Binding IP of MySQL
+
+[Step - 3](https://github.com/Neuron-Roy/MySQL#step---3) Connecting to MySQL
+
+[step - 4](https://github.com/Neuron-Roy/MySQL#step---4) Creating Users in MySQL
 
 # Step - 1
 **Basic Login??**
